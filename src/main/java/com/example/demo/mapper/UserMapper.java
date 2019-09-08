@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
  * @Author: chaiqianlong
  * @Date: 2019-09-08 19:43
  */
+
 @Repository
 public interface UserMapper {
     /**
