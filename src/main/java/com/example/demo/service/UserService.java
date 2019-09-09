@@ -17,6 +17,14 @@ public interface UserService {
      * @Author: chaiqianlong
      * @Date: 2019-09-08 19:45
      */
-    public UserEntity getById(int id);
+    public UserEntity getUserById(int id);
 
+    /**
+     * 新增用户
+     * @param userEntity
+     * @return void
+     * @Author: chaiqianlong
+     * @Date: 2019-09-09 21:11
+     */
+    void addUser(UserEntity userEntity);
 }

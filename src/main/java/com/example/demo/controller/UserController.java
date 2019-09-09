@@ -18,12 +18,18 @@ public class UserController {
     private UserService userService;
 
     @GetMapping("getUser/{id}")
-    public String GetUser(@PathVariable int id) {
-        UserEntity userEntity = userService.getById(id);
+    public String getUser(@PathVariable int id) {
+        UserEntity userEntity = userService.getUserById(id);
         if (userEntity != null) {
             return userEntity.toString();
         }
         return "获取用户信息为空";
+    }
+
+    @GetMapping("addUser")
+    public void addUser() {
+        UserEntity userEntity = new UserEntity("chaiqianlong","123456","柴乾隆");
+        userService.addUser(userEntity);
     }
 
 }

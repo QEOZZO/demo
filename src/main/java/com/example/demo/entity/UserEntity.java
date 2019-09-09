@@ -43,9 +43,15 @@ public class UserEntity {
         this.realName = realName;
     }
 
+    public UserEntity(String userName, String passWord, String realName) {
+        this.userName = userName;
+        this.passWord = passWord;
+        this.realName = realName;
+    }
+
     @Override
     public String toString() {
-        return "User{" +
+        return "{" +
                 "id=" + id +
                 ", userName='" + userName + '\'' +
                 ", passWord='" + passWord + '\'' +

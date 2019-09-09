@@ -18,5 +18,15 @@ public interface UserMapper {
      * @Author: chaiqianlong
      * @Date: 2019-09-08 19:44
      */
-    UserEntity getById(int id);
+    UserEntity getUserById(int id);
+
+    /**
+     * 新增用户
+     * @param userEntity
+     * @return void
+     * @Author: chaiqianlong
+     * @Date: 2019-09-09 21:11
+     */
+    void addUser(UserEntity userEntity);
+
 }

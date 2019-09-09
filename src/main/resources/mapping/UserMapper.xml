@@ -9,8 +9,12 @@
         <result column="realName" jdbcType="VARCHAR" property="realName" />
     </resultMap>
 
-    <select id="getById" resultType="com.example.demo.entity.UserEntity">
+    <select id="getUserById" resultType="com.example.demo.entity.UserEntity">
         select * from user where id = #{id}
     </select>
+
+    <insert id="addUser" parameterType="com.example.demo.entity.UserEntity" useGeneratedKeys="true"  keyProperty="id" >
+        insert into user (id,userName,passWord,realName)VALUES(#{id},#{userName},#{passWord},#{realName})
+    </insert>
 
 </mapper>
