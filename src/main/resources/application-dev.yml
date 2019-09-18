@@ -2,12 +2,30 @@ server:
   port: 8080
 
 spring:
+  freemarker:
+    request-context-attribute: request  #req访问request
+    suffix: .html  #后缀名
+    content-type: text/html
+    enabled: true
+    cache: false #缓存配置
+    template-loader-path: classpath:/WEB-INF/freemarker/ #模板加载路径 按需配置
+    charset: UTF-8 #编码格式
+    settings:
+      number_format: '0.######'   #数字格式化，无小数点
+      template_update_delay: 1
+      defaultEncoding: UTF-8
+      url_escaping_charset: UTF-8
+      locale: zh_CN
+      boolean_format: true,false
+      datetime_format: yyyy-MM-dd HH:mm:ss
+      date_format: yyyy-MM-dd
+      time_format: HH:mm:ss
+      whitespace_stripping: true
   datasource:
     username: root
     password: Local@123456
     url: jdbc:mysql://localhost:3306/demo?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
-
   redis:
     database: 0
     host: 127.0.0.1
@@ -30,5 +48,5 @@ logging:
   level:
     com:
       example:
-        mapper : debug
+        mapper: debug
 
