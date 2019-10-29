@@ -10,12 +10,12 @@ public class Test {
 
     public static void main(String[] args) {
         try {
-            JAXBContext context = JAXBContext.newInstance(MainDataModel.class);
+            JAXBContext context = JAXBContext.newInstance(Data.class);
             Unmarshaller unmarshaller = context.createUnmarshaller();
             Object unmarshal = unmarshaller.unmarshal(new File(resoursePath));
-            MainDataModel mainDataModel = (MainDataModel) unmarshal;
-            First first = mainDataModel.getFirst();
-            Secend secend = mainDataModel.getSecend();
+            Data data = (Data) unmarshal;
+            First first = data.getFirst();
+            Secend secend = data.getSecend();
             System.out.println(first);
             System.out.println(secend);
         } catch (Exception e) {
