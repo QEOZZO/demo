@@ -1,6 +1,6 @@
 package com.example.demo.common.base.service.impl;
 
-import com.example.demo.common.annotation.CorpTypeBean;
+import com.example.demo.common.annotation.TypeBean;
 import com.example.demo.common.base.bean.BaseBean;
 import com.example.demo.common.base.service.BaseService;
 import com.example.demo.common.util.StringUtil;
@@ -11,7 +11,7 @@ import java.util.List;
 
 public class BaseServiceImpl implements BaseService {
     @Override
-    public String[] getIgnoreProperties(BaseBean baseBean, CorpTypeBean.FieldType fieldType) {
+    public String[] getIgnoreProperties(BaseBean baseBean, TypeBean.FieldType fieldType) {
         List<String> listIgnoreProperties = new ArrayList();
         Field[] field = baseBean.getClass().getDeclaredFields();
         if(field != null){
@@ -19,7 +19,7 @@ public class BaseServiceImpl implements BaseService {
                 if(!fie.isAccessible()){
                     fie.setAccessible(true);
                 }
-                CorpTypeBean ediBean = fie.getAnnotation(CorpTypeBean.class);
+                TypeBean ediBean = fie.getAnnotation(TypeBean.class);
                 if(null == ediBean || !StringUtil.arrayToList(ediBean.type()).contains(fieldType)){
                     listIgnoreProperties.add(fie.getName());
                 }

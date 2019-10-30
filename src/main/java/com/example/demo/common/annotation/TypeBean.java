@@ -5,12 +5,12 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD})
 @Documented
-public @interface CorpTypeBean {
+public @interface TypeBean {
 
     FieldType[] type() default {};
 
     enum FieldType {
-        HEZI("1"),HEZUO("2");
+        USER("1"),ORDER("2");
 
         private String type;
 
