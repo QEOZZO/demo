@@ -1,31 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<main>
+<data>
     <user>
         <item>
             <id>user001</id>
             <password>abc123</password>
             <name>张三</name>
             <age>24</age>
+            <price>100</price>
+            <address>商通大厦</address>
         </item>
         <item>
             <id>user002</id>
             <password>abc123</password>
             <name>李四</name>
             <age>27</age>
+            <price>200</price>
+            <address>宝钢大厦</address>
         </item>
     </user>
-    <order>
-        <item>
-            <id>order001</id>
-            <price>123</price>
-            <address>宝钢大厦</address>
-            <age>26</age>
-        </item>
-        <item>
-            <id>order002</id>
-            <price>123</price>
-            <address>商通大厦</address>
-            <age>27</age>
-        </item>
-    </order>
-</main>
+</data>

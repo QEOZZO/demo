@@ -10,6 +10,8 @@ public class UserBean extends BaseBean {
     private String password;
     private String name;
     private String age;
+    private String price;
+    private String address;
 
     @Override
     @XmlElement(name = "id")
@@ -47,6 +49,24 @@ public class UserBean extends BaseBean {
 
     public void setAge(String age) {
         this.age = age;
+    }
+
+    @XmlElement(name = "price")
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    @XmlElement(name = "address")
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override

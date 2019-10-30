@@ -4,11 +4,13 @@ import com.example.demo.common.annotation.TypeBean;
 import com.example.demo.common.base.bean.BaseBean;
 import com.example.demo.common.base.service.BaseService;
 import com.example.demo.common.util.StringUtil;
+import org.springframework.stereotype.Service;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service(value = "baseService")
 public class BaseServiceImpl implements BaseService {
     @Override
     public String[] getIgnoreProperties(BaseBean baseBean, TypeBean.FieldType fieldType) {
