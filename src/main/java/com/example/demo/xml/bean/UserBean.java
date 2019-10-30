@@ -2,9 +2,10 @@ package com.example.demo.xml.bean;
 
 import com.example.demo.common.annotation.TypeBean;
 import com.example.demo.common.base.bean.BaseBean;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 
-import javax.xml.bind.annotation.XmlElement;
-
+@XmlAccessorType(XmlAccessType.FIELD)
 public class UserBean extends BaseBean {
 
     @TypeBean(type = {TypeBean.FieldType.USER})
@@ -21,7 +22,6 @@ public class UserBean extends BaseBean {
     private String address;
 
     @Override
-    @XmlElement(name = "id")
     public String getId() {
         return id;
     }
@@ -31,7 +31,6 @@ public class UserBean extends BaseBean {
         this.id = id;
     }
 
-    @XmlElement(name = "password")
     public String getPassword() {
         return password;
     }
@@ -40,7 +39,6 @@ public class UserBean extends BaseBean {
         this.password = password;
     }
 
-    @XmlElement(name = "name")
     public String getName() {
         return name;
     }
@@ -49,7 +47,6 @@ public class UserBean extends BaseBean {
         this.name = name;
     }
 
-    @XmlElement(name = "age")
     public String getAge() {
         return age;
     }
@@ -58,7 +55,6 @@ public class UserBean extends BaseBean {
         this.age = age;
     }
 
-    @XmlElement(name = "price")
     public String getPrice() {
         return price;
     }
@@ -67,7 +63,6 @@ public class UserBean extends BaseBean {
         this.price = price;
     }
 
-    @XmlElement(name = "address")
     public String getAddress() {
         return address;
     }
