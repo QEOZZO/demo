@@ -1,5 +1,6 @@
-package com.example.demo.common.util;
+package com.example.demo.common.xml;
 
+import com.example.demo.common.util.PropertyUtil;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;

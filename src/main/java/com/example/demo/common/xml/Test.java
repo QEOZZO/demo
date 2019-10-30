@@ -1,4 +1,4 @@
-package com.example.demo.common.util.xml;
+package com.example.demo.common.xml;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
