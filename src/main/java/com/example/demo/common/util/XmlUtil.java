@@ -1,6 +1,5 @@
-package com.example.demo.common.xml;
+package com.example.demo.common.util;
 
-import com.example.demo.common.util.PropertyUtil;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
@@ -16,7 +15,7 @@ import java.util.List;
 
 public class XmlUtil {
 
-    static String xml_path= PropertyUtil.getProperty("xml_path");
+    static String generate_xml_path= PropertyUtil.getProperty("generate_xml_path");
 
     /**
      * 获取文件根节点对象
@@ -90,7 +89,7 @@ public class XmlUtil {
      * @Date: 2019-10-29 16:24
      */
     public static void StringToXml(String xmlStr,String fileName) {
-        fileName = xml_path + File.separator + fileName;
+        fileName = generate_xml_path + File.separator + fileName;
         Document document = null;
         try {
             document = DocumentHelper.parseText(xmlStr);

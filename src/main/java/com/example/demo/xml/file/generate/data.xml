@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<data>
-    <first>
+<main>
+    <user>
         <item>
             <id>user001</id>
             <password>abc123</password>
@@ -13,8 +13,8 @@
             <name>李四</name>
             <age>27</age>
         </item>
-    </first>
-    <secend>
+    </user>
+    <order>
         <item>
             <id>order001</id>
             <price>123</price>
@@ -27,5 +27,5 @@
             <address>商通大厦</address>
             <age>27</age>
         </item>
-    </secend>
-</data>
+    </order>
+</main>

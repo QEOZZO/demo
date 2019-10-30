@@ -1,16 +1,17 @@
-package com.example.demo.common.xml;
+package com.example.demo.xml.bean;
 
 import javax.xml.bind.annotation.XmlElement;
 
-public class UserModel {
+public class OrderBean {
 
     private String id;
-    private String password;
-    private String name;
+    private String price;
+    private String address;
     private String age;
 
     @XmlElement(name = "id")
     public String getId() {
+        this.hashCode();
         return id;
     }
 
@@ -18,22 +19,22 @@ public class UserModel {
         this.id = id;
     }
 
-    @XmlElement(name = "password")
-    public String getPassword() {
-        return password;
+    @XmlElement(name = "price")
+    public String getPrice() {
+        return price;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public void setPrice(String price) {
+        this.price = price;
     }
 
-    @XmlElement(name = "name")
-    public String getName() {
-        return name;
+    @XmlElement(name = "address")
+    public String getAddress() {
+        return address;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @XmlElement(name = "age")
@@ -53,18 +54,17 @@ public class UserModel {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof UserModel)) {
+        if (!(obj instanceof OrderBean)) {
             return false;
         }
-        UserModel userModel = (UserModel) obj;
-        if (this == userModel) {
+        OrderBean orderModel = (OrderBean) obj;
+        if (this == orderModel) {
             return true;
         }
-        if (userModel.id.equals(this.id)) {
+        if (orderModel.id.equals(this.id)) {
             return true;
         } else {
             return false;
         }
     }
-
 }
