@@ -1,20 +1,24 @@
 package com.example.demo.xml.bean;
 
+import com.example.demo.common.base.bean.BaseBean;
+
 import javax.xml.bind.annotation.XmlElement;
 
-public class OrderBean {
+public class OrderBean extends BaseBean {
 
     private String id;
     private String price;
     private String address;
     private String age;
 
+    @Override
     @XmlElement(name = "id")
     public String getId() {
         this.hashCode();
         return id;
     }
 
+    @Override
     public void setId(String id) {
         this.id = id;
     }
