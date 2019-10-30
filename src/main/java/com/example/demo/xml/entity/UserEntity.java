@@ -6,6 +6,8 @@ public class UserEntity {
     private String password;
     private String name;
     private String age;
+    private String price;
+    private String address;
 
     public String getId() {
         return id;
@@ -39,4 +41,19 @@ public class UserEntity {
         this.age = age;
     }
 
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 }

@@ -1,16 +1,23 @@
 package com.example.demo.xml.bean;
 
+import com.example.demo.common.annotation.TypeBean;
 import com.example.demo.common.base.bean.BaseBean;
 
 import javax.xml.bind.annotation.XmlElement;
 
 public class UserBean extends BaseBean {
 
+    @TypeBean(type = {TypeBean.FieldType.USER})
     private String id;
+    @TypeBean(type = {TypeBean.FieldType.USER})
     private String password;
+    @TypeBean(type = {TypeBean.FieldType.USER})
     private String name;
+    @TypeBean(type = {TypeBean.FieldType.USER})
     private String age;
+    @TypeBean(type = {TypeBean.FieldType.ORDER})
     private String price;
+    @TypeBean(type = {TypeBean.FieldType.ORDER})
     private String address;
 
     @Override
