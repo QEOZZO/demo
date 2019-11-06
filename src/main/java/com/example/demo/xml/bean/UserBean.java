@@ -9,26 +9,20 @@ import javax.xml.bind.annotation.XmlAccessorType;
 public class UserBean extends BaseBean {
 
     @TypeBean(type = {TypeBean.FieldType.USER})
-    private String id;
+    private String user_id;
     @TypeBean(type = {TypeBean.FieldType.USER})
     private String password;
     @TypeBean(type = {TypeBean.FieldType.USER})
     private String name;
     @TypeBean(type = {TypeBean.FieldType.USER})
     private String age;
-    @TypeBean(type = {TypeBean.FieldType.ORDER})
-    private String price;
-    @TypeBean(type = {TypeBean.FieldType.ORDER})
-    private String address;
 
-    @Override
-    public String getId() {
-        return id;
+    public String getUser_id() {
+        return user_id;
     }
 
-    @Override
-    public void setId(String id) {
-        this.id = id;
+    public void setUser_id(String user_id) {
+        this.user_id = user_id;
     }
 
     public String getPassword() {
@@ -55,25 +49,9 @@ public class UserBean extends BaseBean {
         this.age = age;
     }
 
-    public String getPrice() {
-        return price;
-    }
-
-    public void setPrice(String price) {
-        this.price = price;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
     @Override
     public int hashCode() {
-        int result = id.hashCode();
+        int result = user_id.hashCode();
         return result;
     }
 
@@ -86,11 +64,12 @@ public class UserBean extends BaseBean {
         if (this == userBean) {
             return true;
         }
-        if (userBean.id.equals(this.id)) {
+        if (userBean.user_id.equals(this.user_id)) {
             return true;
         } else {
             return false;
         }
     }
+
 
 }

@@ -2,20 +2,28 @@
 <data>
     <user>
         <item>
-            <id>user001</id>
+            <user_id>user001</user_id>
             <password>abc123</password>
             <name>张三</name>
             <age>24</age>
+        </item>
+        <item>
+            <user_id>user002</user_id>
+            <password>abc123</password>
+            <name>李四</name>
+            <age>27</age>
+        </item>
+    </user>
+    <order>
+        <item>
+            <order_id>order0001</order_id>
             <price>100</price>
             <address>商通大厦</address>
         </item>
         <item>
-            <id>user002</id>
-            <password>abc123</password>
-            <name>李四</name>
-            <age>27</age>
+            <order_id>order0002</order_id>
             <price>200</price>
             <address>宝钢大厦</address>
         </item>
-    </user>
+    </order>
 </data>

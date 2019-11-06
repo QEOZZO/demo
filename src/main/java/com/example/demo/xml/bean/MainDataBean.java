@@ -8,6 +8,8 @@ public class MainDataBean {
 
     private UserDataBean userDataBean;
 
+    private OrderDataBean orderDataBean;
+
     @XmlElement(name = "user")
     public UserDataBean getUserDataBean() {
         return userDataBean;
@@ -17,4 +19,12 @@ public class MainDataBean {
         this.userDataBean = userDataBean;
     }
 
+    @XmlElement(name = "order")
+    public OrderDataBean getOrderDataBean() {
+        return orderDataBean;
+    }
+
+    public void setOrderDataBean(OrderDataBean orderDataBean) {
+        this.orderDataBean = orderDataBean;
+    }
 }

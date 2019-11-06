@@ -14,4 +14,5 @@ public class UserDataBean {
     public void setUserBeans(Set<UserBean> userBeans) {
         this.userBeans = userBeans;
     }
+
 }
