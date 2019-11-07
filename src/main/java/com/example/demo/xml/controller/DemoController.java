@@ -1,7 +1,7 @@
 package com.example.demo.xml.controller;
 
 import com.example.demo.common.entity.MsgModel;
-import com.example.demo.xml.bean.MainDataBean;
+import com.example.demo.xml.bean.ReportMainBean;
 import com.example.demo.xml.service.DemoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -24,16 +24,16 @@ public class DemoController {
     /**
      * 解密后生成的文件
      */
-    private static String generateFilePath = "/Users/chaiqianlong/workspace/practive/demo/src/main/java/com/example/demo/xml/file/generate/data.xml";
+    private static String generateFilePath = "/Users/chaiqianlong/workspace/practive/demo/src/main/java/com/example/demo/xml/file/generate/reportData.xml";
 
     @ResponseBody
     @PostMapping("/test")
     public Object demoTestPost() throws JAXBException {
-        JAXBContext context = JAXBContext.newInstance(MainDataBean.class);
+        JAXBContext context = JAXBContext.newInstance(ReportMainBean.class);
         Unmarshaller unmarshaller = context.createUnmarshaller();
         Object unmarshal = unmarshaller.unmarshal(new File(generateFilePath));
-        MainDataBean mainDataBean = (MainDataBean) unmarshal;
-        MsgModel msgModel = demoService.testSave(mainDataBean);
+        ReportMainBean reportMainBean = (ReportMainBean) unmarshal;
+        MsgModel msgModel = demoService.testSave(reportMainBean);
         return msgModel;
     }
 

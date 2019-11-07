@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+    <report2_1>
+        <item>
+            <report2_1_id>report2_1---001</report2_1_id>
+            <report2_1_name_cn>报表2_1企业cn001</report2_1_name_cn>
+            <report2_1_name_en>报表2_1企业en001</report2_1_name_en>
+            <report2_1_1>
+                <item>
+                    <report2_1_1_id>report2_1_1---001</report2_1_1_id>
+                    <report2_1_1_name_cn>报表2_1_1企业cn001</report2_1_1_name_cn>
+                    <report2_1_1_name_en>报表2_1_1企业en001</report2_1_1_name_en>
+                </item>
+                <item>
+                    <report2_1_1_id>report2_1_1---002</report2_1_1_id>
+                    <report2_1_1_name_cn>报表2_1_1企业cn002</report2_1_1_name_cn>
+                    <report2_1_1_name_en>报表2_1_1企业en002</report2_1_1_name_en>
+                </item>
+            </report2_1_1>
+        </item>
+        <item>
+            <report2_1_id>report2_1---002</report2_1_id>
+            <report2_1_name_cn>报表2_1企业cn002</report2_1_name_cn>
+            <report2_1_name_en>报表2_1企业en002</report2_1_name_en>
+            <report2_1_1>
+                <item>
+                    <report2_1_1_id>report2_1_1---003</report2_1_1_id>
+                    <report2_1_1_name_cn>报表2_1_1企业cn003</report2_1_1_name_cn>
+                    <report2_1_1_name_en>报表2_1_1企业en003</report2_1_1_name_en>
+                </item>
+                <item>
+                    <report2_1_1_id>report2_1_1---004</report2_1_1_id>
+                    <report2_1_1_name_cn>报表2_1_1企业cn004</report2_1_1_name_cn>
+                    <report2_1_1_name_en>报表2_1_1企业en004</report2_1_1_name_en>
+                </item>
+            </report2_1_1>
+        </item>
+    </report2_1>
+</data>
