@@ -85,13 +85,6 @@
 			<artifactId>spring-kafka</artifactId>
 			<version>2.2.8.RELEASE</version>
 		</dependency>
-
-<!--		<dependency>-->
-<!--			<groupId>org.apache.kafka</groupId>-->
-<!--			<artifactId>kafka_2.12</artifactId>-->
-<!--			<version>2.3.1</version>-->
-<!--		</dependency>-->
-
 	</dependencies>
 
 	<distributionManagement>
@@ -101,8 +94,6 @@
 			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
 		</repository>
 	</distributionManagement>
-
-
 
 	<build>
 		<plugins>
