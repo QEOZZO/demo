@@ -17,7 +17,7 @@ public class Test {
 
     @GetMapping("/test")
     public void testKafka(){
-        for (int i = 0; i < 30; i++) {
+        for (int i = 0; i < 10; i++) {
             //调用消息发送类中的消息发送方法
             kafkaSender.send();
         }

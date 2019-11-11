@@ -15,7 +15,13 @@ public class KafkaReceiver {
         Optional<?> kafkaMessage = Optional.ofNullable(record.value());
         if (kafkaMessage.isPresent()) {
             Object message = kafkaMessage.get();
-            log.info("------------------消费的message =" + message);
+            try {
+                Thread.sleep(2000);
+                log.info("------------------消费的message =" + message);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 
